@@ -1,8 +1,8 @@
 body {
 	min-width: 320px;
-	font: 18px/1.22 'Open Sans', helvetica, sans-serif;
-	color: #404852;
-	background: #fbfbfb;
+	font: 20px/1.22  $Lato, helvetica, sans-serif;
+	color: $dark-grey;
+	background: $white;
 }
 
 button,
@@ -82,21 +82,21 @@ h2 {
 	line-height: 1.2;
 	font-weight: 600;
 	margin: 0 0 30px;
-	&.title-decor {
-		position: relative;
-		padding-bottom: 27px;
-		text-align: center;
-		&:before {
-			width: 173px;
-			height: 3px;
-			background: #b9a787;
-			position:absolute;
-			bottom: 0;
-			left:50%;
-			transform: translate(-50%, 0);
-			content: '';
-		}
-	}
+	// &.title-decor {
+	// 	position: relative;
+	// 	padding-bottom: 27px;
+	// 	text-align: center;
+	// 	&:before {
+	// 		width: 173px;
+	// 		height: 3px;
+	// 		background: #b9a787;
+	// 		position:absolute;
+	// 		bottom: 0;
+	// 		left:50%;
+	// 		transform: translate(-50%, 0);
+	// 		content: '';
+	// 	}
+	// }
 }
 h3 {
 	font-size: 25px;
@@ -107,9 +107,9 @@ h6 {
 	font-weight: 600;
 }
 
-.ws-nowrap {
-	white-space: nowrap;
-}
+// .ws-nowrap {
+// 	white-space: nowrap;
+// }
 
 .sr-only {
 	position: absolute;
@@ -142,43 +142,43 @@ h6 {
 	h1,
 	h2 {
 		font-size: 21px;
-		&.title-decor {
-			padding-bottom: 15px;
-			margin-bottom: 25px;
-		}
+		// &.title-decor {
+		// 	padding-bottom: 15px;
+		// 	margin-bottom: 25px;
+		// }
 	}
 	h3 {
 		font-size: 18px;
 	}
 }
 
-.loader {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: #33384c;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-	.loader-inner {
-		text-align: center;
-	}
-	.logo {
-		width: 350px;
-	}
-	.gif {
-		width: 50px;
-		margin: 0 auto;
-	}
-	@media (max-width: 767px) {
-		.logo {
-			width: 180px;
-		}
-		.gif {
-			width: 45px;
-		}
-	}
-}
+// .loader {
+// 	position: fixed;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	background: #33384c;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	z-index: 9999;
+// 	.loader-inner {
+// 		text-align: center;
+// 	}
+// 	.logo {
+// 		width: 350px;
+// 	}
+// 	.gif {
+// 		width: 50px;
+// 		margin: 0 auto;
+// 	}
+// 	@media (max-width: 767px) {
+// 		.logo {
+// 			width: 180px;
+// 		}
+// 		.gif {
+// 			width: 45px;
+// 		}
+// 	}
+// }

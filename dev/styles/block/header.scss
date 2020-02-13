@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: $dark-grey;
+    height: 100px;
+    width: 100%;
+    padding: 17px 0;
+
+    &__wrap {
+        position: relative;
+        display: flex;
+
+        &__nav {
+            padding-left: 240px;
+            width: 100%;
+
+            .ul-nav {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        padding-right: 20px;
+                    }
+                }
+
+                &__text {
+                    font-size: 18px;
+                    color: $white;
+                    line-height: 22px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        left: 100px;
+        top: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
