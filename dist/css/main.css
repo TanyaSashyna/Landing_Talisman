@@ -2015,6 +2015,14 @@ textarea {
   color: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   min-width: 320px;
   font: 20px/1.22 "Lato", helvetica, sans-serif;
@@ -2162,12 +2170,12 @@ h6 {
 }
 
 .header__wrap__nav {
+  position: relative;
   padding-left: 240px;
   width: 100%;
 }
 
 .header__wrap__nav .ul-nav {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
@@ -2186,6 +2194,21 @@ h6 {
   color: #ffffff;
   line-height: 22px;
   padding-left: 20px;
+}
+
+.header__wrap__nav .ul-nav .btn-menu {
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.header__wrap__nav .nav-menu {
+  position: absolute;
+  top: 83px;
+  right: 0;
+  width: 310px;
+  background-color: #ffffff;
 }
 
 .header__logo {
@@ -2213,6 +2236,21 @@ h6 {
 
 .nav-icon i {
   font-size: 26px;
+  color: #ffffff;
+}
+
+.social-wrap {
+  display: flex;
+}
+
+.social-wrap .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
   color: #ffffff;
 }
 

@@ -11,11 +11,11 @@
         display: flex;
 
         &__nav {
+            position: relative;
             padding-left: 240px;
             width: 100%;
 
             .ul-nav {
-                list-style-type: none;
                 display: flex;
                 justify-content: space-between;
 
@@ -34,6 +34,21 @@
                     line-height: 22px;
                     padding-left: 20px;
                 }
+
+                .btn-menu {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 26px;
+                    color: $white;
+                }
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 83px;
+                right: 0;
+                width: 310px;
+                background-color: $white;
             }
         }
     }
