@@ -54,16 +54,13 @@
 
     @media screen and (max-width: $sm) {
         top: 50px;
-        right: 20px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
 
     @media screen and (max-width: $xs) {
-        width: 320px;
-        top: 50px;
-        right: 0;
-    }
-
-    @media screen and (max-width: $xxs) {
         padding-top: 50px;
     }
 }

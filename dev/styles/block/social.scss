@@ -24,10 +24,8 @@
 
     .social-wrap {
         li {
-            &:not(:last-child) {
-                padding: 0;
-                margin-right: 20px;
-            }
+            padding: 0;
+            margin: 0 10px;
         }
         .social-link {
             color: $dark-grey;
@@ -39,5 +37,11 @@
                
             }
         }
-    }   
+    } 
+    
+    @media screen and (max-width: $sm) {
+        .social-wrap {
+            justify-content: center;
+        }
+    }
 }
