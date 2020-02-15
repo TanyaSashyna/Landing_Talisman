@@ -8117,7 +8117,19 @@ MobNav.transitionEndEvent = (function () {
    // changeCurrency();
    // initMapScroll();
    // initLoader();
+   openMenu();
 })(jQuery);
+
+
+function openMenu () {
+   var btnMenu = document.getElementById('btn-menu');
+   var navMenu = document.getElementById('nav-menu');
+
+   btnMenu.addEventListener('click', function (e) {
+      btnMenu.classList.toggle('btn-menu__close');
+      navMenu.classList.toggle('nav-menu__show');
+   })
+};
 
 // $('.text-slider').readmore({
 //    heightMargin: 50,

@@ -1,0 +1,14 @@
+footer {
+    position: relative;
+    flex-shrink: 0;
+
+    .footer {
+        position: relative;
+        padding: 30px;
+        background-color: $dark-grey;
+
+        span {
+            color: $white;
+        }
+    }
+}

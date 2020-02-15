@@ -1,0 +1,69 @@
+.nav-menu {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 310px;
+    background-color: $white;
+    padding: 10px 0;
+    transform: translateY(calc(-100% - 120px));
+    transition: $transition;
+    z-index: 99;
+
+    &__show {
+        transform: translateY(0);
+    }
+
+    li {
+        a {
+            display: block;
+            padding: 8px 26px;
+            color: $dark-grey;
+            font-size: 20px;
+
+            &:hover {
+                background-color: $yellow;
+            }
+        }
+
+        &.contacts, &.social-menu {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $xl) {
+        right: 50px;
+    }
+
+    @media screen and (max-width: $lg) {
+        li {
+            &.social-menu {
+                display: block;
+            }
+        }  
+    }
+
+    @media screen and (max-width: $md) {
+        right: 30px;
+
+        li {
+            &.contacts {
+                display: block;
+            }
+        }    
+    }
+
+    @media screen and (max-width: $sm) {
+        top: 50px;
+        right: 20px;
+    }
+
+    @media screen and (max-width: $xs) {
+        width: 320px;
+        top: 50px;
+        right: 0;
+    }
+
+    @media screen and (max-width: $xxs) {
+        padding-top: 50px;
+    }
+}

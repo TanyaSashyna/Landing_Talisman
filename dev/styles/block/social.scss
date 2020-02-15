@@ -10,5 +10,34 @@
         border: 2px solid $white;
         border-radius: 50%;
         color: $white;
+        font-size: 24px;
+        padding: 0;
+
+        &:hover {
+            box-shadow: 0 0 5px rgba($white, 0.5);
+        }
     }
+}
+
+.social-menu {
+    padding: 8px 26px;
+
+    .social-wrap {
+        li {
+            &:not(:last-child) {
+                padding: 0;
+                margin-right: 20px;
+            }
+        }
+        .social-link {
+            color: $dark-grey;
+            border-color: $dark-grey;
+            background-color: $white;
+
+            &:hover {
+                box-shadow: 0 0 7px rgba($dark-grey, 0.5);
+               
+            }
+        }
+    }   
 }
