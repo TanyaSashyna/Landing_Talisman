@@ -40,4 +40,16 @@
         font-size: 34px;
         color: $blue;
     }
+
+    @media screen and (max-width: $lg) {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        h2 {
+            font-size: 20px;
+        }
+    }
 }

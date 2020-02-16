@@ -2911,6 +2911,18 @@ footer .footer span {
   color: #1D1D7D;
 }
 
+@media screen and (max-width: 1366px) {
+  .caption h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .caption h2 {
+    font-size: 20px;
+  }
+}
+
 .we-make .caption-icon {
   background-color: #ffffff;
 }
