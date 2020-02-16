@@ -2,4 +2,145 @@
     .caption-icon {
         background-color: $white;
     }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        width: 50%;
+        padding: 0 55px 0 100px;
+        
+        ul {
+            li {
+                position: relative;
+                padding-left: 15px;
+                font-size: 30px;
+                line-height: 40px;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                &:before {
+                    content: '-';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    &__form {
+        position: relative;
+        width: 50%;
+        padding: 35px 100px 35px 65px;
+        background-color: $grey-2;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 45px;
+            width: 2px;
+            height: 100%;
+            background-color: $white;
+            z-index: 1;
+        }
+
+        .rhombus-block {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 29px;
+            margin: auto 0;
+            width: 34px;
+            height: 54px;
+            z-index: 2;
+            text-align: center;
+            background-color: $grey-2;
+            padding: 10px 0;
+
+            i {
+                display: inline-block;
+                font-size: 34px;
+                color: $white;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    @media screen and (max-width: $xl) {
+        &__list {
+            padding: 0 55px 0 50px;
+        }
+
+        &__form {
+            padding: 35px 50px 35px 50px;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        &__list {
+            ul {
+                li {
+                    font-size: 24px;
+                    line-height: 30px;
+
+                    &:before {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $md) {
+        padding-bottom: 0;
+
+        &__list {
+            width: 100%;
+            padding: 0 30px 40px 30px;
+
+            ul {
+                li {
+                    font-size: 20px;
+                    line-height: 26px;
+
+                    &:before {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            width: 100%;
+
+            &:before, .rhombus-block {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        &__list {
+            padding: 0 20px 30px 20px;
+
+            ul {
+                li {
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    &:before {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }

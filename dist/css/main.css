@@ -2871,6 +2871,7 @@ footer .footer span {
   position: relative;
   padding-bottom: 38px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .caption h2 {
@@ -2925,6 +2926,130 @@ footer .footer span {
 
 .we-make .caption-icon {
   background-color: #ffffff;
+}
+
+.we-make__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.we-make__list {
+  width: 50%;
+  padding: 0 55px 0 100px;
+}
+
+.we-make__list ul li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.we-make__list ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.we-make__list ul li:before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+}
+
+.we-make__form {
+  position: relative;
+  width: 50%;
+  padding: 35px 100px 35px 65px;
+  background-color: #808080;
+}
+
+.we-make__form:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 45px;
+  width: 2px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.we-make__form .rhombus-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 29px;
+  margin: auto 0;
+  width: 34px;
+  height: 54px;
+  z-index: 2;
+  text-align: center;
+  background-color: #808080;
+  padding: 10px 0;
+}
+
+.we-make__form .rhombus-block i {
+  display: inline-block;
+  font-size: 34px;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1440px) {
+  .we-make__list {
+    padding: 0 55px 0 50px;
+  }
+  .we-make__form {
+    padding: 35px 50px 35px 50px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .we-make__list ul li {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .we-make__list ul li:before {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .we-make {
+    padding-bottom: 0;
+  }
+  .we-make__list {
+    width: 100%;
+    padding: 0 30px 40px 30px;
+  }
+  .we-make__list ul li {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .we-make__list ul li:before {
+    font-size: 20px;
+  }
+  .we-make__form {
+    width: 100%;
+  }
+  .we-make__form:before, .we-make__form .rhombus-block {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .we-make__list {
+    padding: 0 20px 30px 20px;
+  }
+  .we-make__list ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .we-make__list ul li:before {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */
