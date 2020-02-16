@@ -38,6 +38,21 @@
             position: relative;
             z-index: 2;
         }
+
+        .arrow-down {
+            display: inline-block;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 1;
+            
+            a {
+                color: $white;
+                font-size: 47px;
+            }
+        }
     }
 
     &-content {
@@ -216,6 +231,14 @@
     @media screen and (max-width: $sm) {
         &-wrap {
             height: calc(100vh - 50px);
+
+            .arrow-down {
+                bottom: 20px;
+                
+                a {
+                    font-size: 30px;
+                }
+            }
         }
 
         &-content {

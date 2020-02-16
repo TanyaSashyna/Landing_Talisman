@@ -2223,6 +2223,16 @@ main {
   padding: 0 20px;
 }
 
+section {
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 1268px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
 header {
   position: relative;
   height: 100px;
@@ -2599,6 +2609,21 @@ footer .footer span {
   z-index: 2;
 }
 
+.hero-wrap .arrow-down {
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-wrap .arrow-down a {
+  color: #ffffff;
+  font-size: 47px;
+}
+
 .hero-content {
   position: relative;
   padding: 30px 30px 30px 137px;
@@ -2768,6 +2793,12 @@ footer .footer span {
   .hero-wrap {
     height: calc(100vh - 50px);
   }
+  .hero-wrap .arrow-down {
+    bottom: 20px;
+  }
+  .hero-wrap .arrow-down a {
+    font-size: 30px;
+  }
   .hero-content {
     padding-left: 0;
   }
@@ -2834,6 +2865,54 @@ footer .footer span {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
+}
+
+.caption {
+  position: relative;
+  padding-bottom: 38px;
+  text-align: center;
+}
+
+.caption h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  z-index: 1;
+  font-size: 40px;
+  font-family: "NotoSerif";
+  text-transform: uppercase;
+}
+
+.caption h2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  width: 100%;
+  height: 2px;
+  background-color: #1D1D7D;
+}
+
+.caption .caption-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 54px;
+  height: 38px;
+  z-index: 2;
+}
+
+.caption i {
+  font-size: 34px;
+  color: #1D1D7D;
+}
+
+.we-make .caption-icon {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
