@@ -1,0 +1,65 @@
+.services {
+    background-color: $grey-1;
+    padding-bottom: 0;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -10px;
+    }
+
+    &__item {
+        max-width: 345px;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 100px;
+
+        p {
+            font-size: 30px;
+            line-height: 36px;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .service-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 25px;
+        background-color: $white;
+        border-radius: 50%;
+
+        i {
+            font-size: 64px;
+            color: $blue;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        &__item {
+            max-width: 240px;
+            margin-bottom: 50px;
+
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        &__item {
+            max-width: 240px;
+            margin-bottom: 50px;
+            
+            p {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

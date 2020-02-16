@@ -920,6 +920,22 @@ body.compensate-for-scrollbar {
   content: "\e909";
 }
 
+.icon-diamon:before {
+  content: "\e910";
+}
+
+.icon-brush:before {
+  content: "\e911";
+}
+
+.icon-pencil:before {
+  content: "\e912";
+}
+
+.icon-magic:before {
+  content: "\e913";
+}
+
 .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
   -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
   -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
@@ -2997,16 +3013,27 @@ footer .footer span {
   transform: rotate(90deg);
 }
 
+.we-make__caption {
+  font-size: 40px;
+  font-family: "NotoSerif";
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
 @media screen and (max-width: 1440px) {
   .we-make__list {
     padding: 0 55px 0 50px;
   }
   .we-make__form {
-    padding: 35px 50px 35px 50px;
+    padding: 35px 50px;
   }
 }
 
 @media screen and (max-width: 1366px) {
+  .we-make__caption {
+    font-size: 30px;
+  }
   .we-make__list ul li {
     font-size: 24px;
     line-height: 30px;
@@ -3033,6 +3060,7 @@ footer .footer span {
   }
   .we-make__form {
     width: 100%;
+    padding: 35px 20px;
   }
   .we-make__form:before, .we-make__form .rhombus-block {
     display: none;
@@ -3040,6 +3068,9 @@ footer .footer span {
 }
 
 @media screen and (max-width: 768px) {
+  .we-make__caption {
+    font-size: 20px;
+  }
   .we-make__list {
     padding: 0 20px 30px 20px;
   }
@@ -3047,8 +3078,176 @@ footer .footer span {
     font-size: 14px;
     line-height: 20px;
   }
+  .we-make__list ul li:not(:last-child) {
+    margin-bottom: 5px;
+  }
   .we-make__list ul li:before {
     font-size: 14px;
+  }
+}
+
+.form {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form__group--icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.form__group--icon i {
+  font-size: 20px;
+  color: #2C2C2C;
+}
+
+.form__group.last {
+  margin-bottom: 40px;
+}
+
+.form__group .field {
+  height: 50px;
+  width: 100%;
+  padding: 15px 20px 15px 60px;
+  border: 2px solid #ffffff;
+  background-color: #808080;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.form__group .field::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.form__group .field:focus, .form__group .field:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.form__btn {
+  text-align: center;
+}
+
+.form__btn .btn {
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  .form__group--icon {
+    height: 40px;
+    width: 40px;
+  }
+  .form__group .field {
+    height: 40px;
+    font-size: 16px;
+  }
+  .form__group .field::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__group .field {
+    font-size: 14px;
+  }
+  .form__group .field::placeholder {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  height: 50px;
+  padding: 15px 35px;
+  border: none;
+  color: #2C2C2C;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-yellow {
+  background-color: #FEC70B;
+}
+
+.btn-yellow:hover {
+  background-color: #ffffff;
+}
+
+.services {
+  background-color: #D6D6D6;
+  padding-bottom: 0;
+}
+
+.services__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.services__item {
+  max-width: 345px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+
+.services__item p {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+.services .service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.services .service-icon i {
+  font-size: 64px;
+  color: #1D1D7D;
+}
+
+@media screen and (max-width: 1366px) {
+  .services__item {
+    max-width: 240px;
+    margin-bottom: 50px;
+  }
+  .services__item p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__item {
+    max-width: 240px;
+    margin-bottom: 50px;
+  }
+  .services__item p {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 

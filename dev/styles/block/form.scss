@@ -1,0 +1,88 @@
+.form { 
+    max-width: 390px;
+    margin: 0 auto;
+
+    &__group {
+        position: relative;
+        margin-bottom: 20px;
+
+        &--icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: $white;
+
+            i {
+                font-size: 20px;
+                color: $dark-grey;
+            }
+        }
+
+        &.last {
+            margin-bottom: 40px;
+        }
+
+        .field {
+            height: 50px;
+            width: 100%;
+            padding: 15px 20px 15px 60px;
+            border: 2px solid $white;
+            background-color:  $grey-2;
+            color: $white;
+            font-size: 20px;
+
+            &::placeholder {
+                color: $white;
+                font-size: 20px;
+            }
+
+            &:focus, &:hover {
+                box-shadow: 0 0 5px rgba($white, 0.5);
+            }
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        &__group {
+            &--icon {
+                height: 40px;
+                width: 40px;
+            }
+
+            .field {
+                height: 40px;
+                font-size: 16px;
+
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        &__group {
+            .field {
+                font-size: 14px;
+
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
