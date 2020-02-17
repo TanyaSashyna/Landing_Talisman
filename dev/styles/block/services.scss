@@ -2,6 +2,10 @@
     background-color: $grey-1;
     padding-bottom: 0;
 
+    .caption-icon {
+        background-color: $grey-1;
+    }
+
     &__wrap {
         display: flex;
         flex-wrap: wrap;
