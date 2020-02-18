@@ -1,0 +1,43 @@
+.tagline {
+    h3 {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 46px;
+        line-height: 53px;
+        text-align: center;
+        color: $blue;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        h3 {
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+
+    @media screen and (max-width: $md) {
+        h3 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        h3 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
