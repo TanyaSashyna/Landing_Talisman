@@ -944,6 +944,10 @@ body.compensate-for-scrollbar {
   content: "\e915";
 }
 
+.icon-buffer:before {
+  content: "\e916";
+}
+
 .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
   -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
   -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
@@ -3221,7 +3225,7 @@ footer .footer span {
 }
 
 .services__item {
-  max-width: 345px;
+  max-width: 350px;
   width: 100%;
   padding: 0 10px;
   margin-bottom: 100px;
@@ -3590,6 +3594,33 @@ footer .footer span {
   .advantages__item p {
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+.works .caption-icon {
+  background-color: #ffffff;
+}
+
+.works__wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 55px;
+}
+
+.works__item {
+  width: auto;
+}
+
+.works__item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .works__wrap {
+    flex-wrap: wrap;
+  }
+  .works__item {
+    width: 100%;
   }
 }
 

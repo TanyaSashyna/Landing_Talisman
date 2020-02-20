@@ -1,0 +1,29 @@
+.works {
+    .caption-icon {
+        background-color: $white;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 55px;
+    }
+
+    &__item {
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 100%;
+        }
+    }
+}
