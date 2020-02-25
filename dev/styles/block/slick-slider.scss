@@ -1,0 +1,122 @@
+.slick {
+    &-slider {
+        position: relative;
+        padding: 0 100px;
+    }
+
+    &-item {
+        text-align: center;
+        padding: 0 30px;
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            background-color: $white;
+            border-radius: 50%;
+
+            i {
+                font-size: 64px;
+                color: $blue;
+            }
+        }
+
+        h4 {
+            margin-bottom: 40px;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        line-height: 1.7;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        text-align: center;
+
+        &.--left {
+            left: 0;
+        }
+
+        &.--right {
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        &-slider {
+            padding: 0 40px;
+        }
+
+        &-item {
+            padding: 0 25px;
+        }
+
+        &-arrow {
+            &.--left {
+                left: -10px;
+            }
+    
+            &.--right {
+                right: -10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $sm) {
+        &-slider {
+            padding: 0 10px;
+        }
+
+        &-item {
+            padding: 0;
+
+            h4 {
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &-arrow {
+            top: 132px;
+            transform: none;
+            overflow: hidden;
+            width: 20px;
+
+            &.--left {
+                left: -15px;
+            }
+    
+            &.--right {
+                right: -15px;
+
+                i {
+                    margin-left: -20px;
+                }
+            }
+        }
+    }
+}

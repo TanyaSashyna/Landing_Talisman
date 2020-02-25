@@ -24,6 +24,7 @@
    // initMapScroll();
    // initLoader();
    openMenu();
+   initSlickSlider();
 })(jQuery);
 
 
@@ -36,6 +37,30 @@ function openMenu () {
       navMenu.classList.toggle('nav-menu__show');
    })
 };
+
+function initSlickSlider() {
+   const btnPrev = '<button class="slick-next slick-arrow --left" type="button"><i class="icon-arrow-left"></i></button>';
+   const btnNext = '<button class="slick-prev slick-arrow --right" type="button"><i class="icon-arrow-right"></i></button>';
+
+	$('.slick-slider').slick({
+      arrows: true,
+      nextArrow: btnNext,
+      prevArrow: btnPrev,
+      infinite: true,
+		slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 1
+            }
+         }
+      ]
+	});
+}
 
 // $('.text-slider').readmore({
 //    heightMargin: 50,
@@ -166,20 +191,6 @@ function openMenu () {
 // 		animSpeed: 400,
 // 		effect: 'none'
 //    });
-// }
-
-// function initHeroGallery() {
-// 	$('.hero-gallery').slick({
-// 		dots: true,
-// 		infinite: true,
-// 		speed: 500,
-// 		fade: true,
-// 		cssEase: 'linear',
-// 		autoplay: true,
-// 		autoplaySpeed: 4000,
-// 		arrows: false,
-// 		appendDots: false
-// 	});
 // }
 
 // function initApartmentGallery() {
