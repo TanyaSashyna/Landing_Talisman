@@ -1,0 +1,30 @@
+.contact {
+    &-us {
+        .caption-icon {
+            background-color: $white;
+        }
+    }
+
+    &-form {
+        .form {
+            &__group {
+                &--icon {
+                    background-color: $grey-2;
+
+                    i {
+                        color: $white;
+                    }
+                }
+
+                .field {
+                    background-color: $white;
+                    border-color: $grey-2;
+
+                    &::placeholder {
+                        color: $grey-2;
+                    }
+                }
+            }
+        }
+    }
+}

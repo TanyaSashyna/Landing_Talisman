@@ -3624,4 +3624,33 @@ footer .footer span {
   }
 }
 
+.contact-us .caption-icon {
+  background-color: #ffffff;
+}
+
+.contact-form .form__group--icon {
+  background-color: #808080;
+}
+
+.contact-form .form__group--icon i {
+  color: #ffffff;
+}
+
+.contact-form .form__group .field {
+  background-color: #ffffff;
+  border-color: #808080;
+}
+
+.contact-form .form__group .field::placeholder {
+  color: #808080;
+}
+
+.reviews {
+  background-color: #D6D6D6;
+}
+
+.reviews .caption-icon {
+  background-color: #D6D6D6;
+}
+
 /*# sourceMappingURL=maps/main.css.map */
