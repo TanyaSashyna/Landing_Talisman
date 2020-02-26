@@ -1,14 +1,49 @@
 footer {
     position: relative;
     flex-shrink: 0;
+}
 
-    .footer {
-        position: relative;
-        padding: 30px;
-        background-color: $dark-grey;
+.footer {
+    position: relative;
+    padding: 30px;
+    background-color: $dark-grey;
 
-        span {
+    span {
+        color: $white;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .arrow-up {
             color: $white;
+            font-size: 47px;
+            display: block;
+            width: 57px;
+            height: 57px;
+            padding: 5px;
+        }
+    }
+
+    &__nav-menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1450px;
+        width: 100%;
+
+        li {
+            a {
+                display: block;
+                font-size: 20px;
+                color: $white;
+                transition: $transition;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
         }
     }
 }

@@ -2584,14 +2584,47 @@ footer {
   flex-shrink: 0;
 }
 
-footer .footer {
+.footer {
   position: relative;
   padding: 30px;
   background-color: #2C2C2C;
 }
 
-footer .footer span {
+.footer span {
   color: #ffffff;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer__menu .arrow-up {
+  color: #ffffff;
+  font-size: 47px;
+  display: block;
+  width: 57px;
+  height: 57px;
+  padding: 5px;
+}
+
+.footer__nav-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1450px;
+  width: 100%;
+}
+
+.footer__nav-menu li a {
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer__nav-menu li a:hover {
+  color: #FEC70B;
 }
 
 .hero {
@@ -2650,6 +2683,11 @@ footer .footer span {
 .hero-wrap .arrow-down a {
   color: #ffffff;
   font-size: 47px;
+  display: block;
+  width: 57px;
+  height: 57px;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 .hero-content {
@@ -3749,7 +3787,7 @@ footer .footer span {
     top: 132px;
     transform: none;
     overflow: hidden;
-    width: 20px;
+    width: 19px;
   }
   .slick-arrow.--left {
     left: -15px;
