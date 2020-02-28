@@ -25,7 +25,10 @@
     .social-wrap {
         li {
             padding: 0;
-            margin: 0 10px;
+            
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
         }
         .social-link {
             color: $dark-grey;

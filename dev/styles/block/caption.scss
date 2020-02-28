@@ -43,12 +43,16 @@
     }
 
     @media screen and (max-width: $lg) {
+        margin-bottom: 30px;
+
         h2 {
             font-size: 30px;
         }
     }
 
     @media screen and (max-width: $sm) {
+        margin-bottom: 20px;
+
         h2 {
             font-size: 20px;
         }

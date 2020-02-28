@@ -30,6 +30,7 @@
     
                     span {
                         opacity: 1;
+                        font-size: 30px;
                     }
                 }
             }
@@ -52,7 +53,7 @@
             z-index: 1;
 
             span {
-                font-size: 30px;
+                font-size: 0;
                 text-transform: uppercase;
                 color: $white;
                 opacity: 0;

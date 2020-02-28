@@ -6,7 +6,10 @@
     &__wrap {
         display: flex;
         justify-content: center;
-        margin: 0 0 55px;
+        
+        &:not(:last-child) {
+            margin: 0 0 55px;
+        }
     }
 
     &__item {

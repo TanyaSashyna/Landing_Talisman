@@ -19,10 +19,21 @@
                 .field {
                     background-color: $white;
                     border-color: $grey-2;
+                    color: $grey-2;
 
                     &::placeholder {
                         color: $grey-2;
                     }
+
+                    &:focus {
+                        box-shadow: 0 0 5px rgba($grey-2, 0.5);
+                    }
+                }
+            }
+
+            &__btn {
+                .btn {
+                    border: 2px solid #FEC70B;
                 }
             }
         }
