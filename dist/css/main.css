@@ -3198,9 +3198,8 @@ header {
 .btn {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 50px;
-  padding: 10px 35px;
+  padding: 12px 35px;
   border: none;
   color: #2C2C2C;
   font-size: 20px;
@@ -3220,6 +3219,7 @@ header {
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 16px;
+    padding: 16px 35px;
   }
 }
 
