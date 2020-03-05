@@ -5,6 +5,8 @@
    openMenu();
    initSlickSlider();
    initAnchor();
+   showStones();
+   showWorks();
 })(jQuery);
 
 
@@ -19,8 +21,8 @@ function openMenu () {
 };
 
 function initSlickSlider() {
-   const btnPrev = '<button class="slick-next slick-arrow --left" type="button"><i class="icon-arrow-left"></i></button>';
-   const btnNext = '<button class="slick-prev slick-arrow --right" type="button"><i class="icon-arrow-right"></i></button>';
+   var btnPrev = '<button class="slick-next slick-arrow --left" type="button"><i class="icon-arrow-left"></i></button>';
+   var btnNext = '<button class="slick-prev slick-arrow --right" type="button"><i class="icon-arrow-right"></i></button>';
 
 	$('.slick-slider').slick({
       arrows: true,
@@ -63,4 +65,72 @@ function initAnchor() {
          navMenu.classList.remove('nav-menu__show');
       });
   });
+}
+
+function showStones() {
+   var btnShowStones = document.getElementById('btn-show-stones');
+   var btnHiddenStones = document.getElementById('btn-hidden-stones');
+   var typesStone = document.getElementsByClassName('types-stone__item');
+
+   var handleShowStones = (e) => {
+      btnShowStones.style.display = "none";
+      btnHiddenStones.style.display = "block";
+
+      Array.prototype.forEach.call(typesStone, (type, ind) => {
+         if (ind > 7 ) {
+            type.classList.remove('d-none');
+         }
+      });
+   }
+
+   var handleHiddenStones = (e) => {
+      setTimeout(() => {
+         btnShowStones.style.display = "block";
+         btnHiddenStones.style.display = "none";
+
+         Array.prototype.forEach.call(typesStone, (type, ind) => {
+            if (ind > 7 ) {
+               type.classList.add('d-none');
+            }
+         });
+      }, 1000);
+      
+   }
+
+   btnShowStones.addEventListener('click', handleShowStones);
+   btnHiddenStones.addEventListener('click', handleHiddenStones);
+}
+
+function showWorks() {
+   var btnShowWorks = document.getElementById('btn-show-works');
+   var btnHiddenWorks = document.getElementById('btn-hidden-works');
+   var works = document.getElementsByClassName('works__wrap');
+
+   var handleShowWorks = (e) => {
+      btnShowWorks.style.display = "none";
+      btnHiddenWorks.style.display = "block";
+
+      Array.prototype.forEach.call(works, (type, ind) => {
+         if (ind > 1 ) {
+            type.classList.remove('d-none');
+         }
+      });
+   }
+
+   var handleHiddenWorks = (e) => {
+      setTimeout(() => {
+         btnShowWorks.style.display = "block";
+         btnHiddenWorks.style.display = "none";
+
+         Array.prototype.forEach.call(works, (type, ind) => {
+            if (ind > 1 ) {
+               type.classList.add('d-none');
+            }
+         });
+      }, 1000);
+      
+   }
+
+   btnShowWorks.addEventListener('click', handleShowWorks);
+   btnHiddenWorks.addEventListener('click', handleHiddenWorks);
 }

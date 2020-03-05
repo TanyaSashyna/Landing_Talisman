@@ -3068,7 +3068,7 @@ header {
 .we-make__caption {
   max-width: 550px;
   font-size: 40px;
-  font-family: "NotoSerif";
+  font-family: "LoraBold";
   color: #ffffff;
   text-align: center;
   margin: 0 auto 30px;
@@ -3383,6 +3383,29 @@ header {
   text-align: center;
 }
 
+.types-stone__btn {
+  display: block;
+}
+
+.types-stone__btn .btn {
+  margin: 0 auto;
+  width: 240px;
+}
+
+.types-stone__btn .btn:hover {
+  background-color: #FEC70B;
+}
+
+@media screen and (min-width: 769px) {
+  .types-stone__btn {
+    display: none;
+  }
+}
+
+.types-stone .btn-hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1366px) {
   .types-stone__item:hover .stone-info {
     top: 30px;
@@ -3428,8 +3451,14 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .types-stone__wrap {
+    margin-bottom: 30px;
+  }
   .types-stone__item .stone-info span {
     font-size: 16px;
+  }
+  .types-stone__item.d-none {
+    display: none;
   }
 }
 
@@ -3670,7 +3699,7 @@ header {
 }
 
 .works__wrap:not(:last-child) {
-  margin: 0 0 55px;
+  margin-bottom: 55px;
 }
 
 .works__item {
@@ -3681,9 +3710,23 @@ header {
   width: 100%;
 }
 
+.works .btn-hidden {
+  display: none;
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .works__wrap {
     flex-wrap: wrap;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works__wrap:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .works__wrap.d-none {
+    display: none;
   }
   .works__item {
     width: 100%;

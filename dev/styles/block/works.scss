@@ -8,7 +8,7 @@
         justify-content: center;
         
         &:not(:last-child) {
-            margin: 0 0 55px;
+            margin-bottom: 55px;
         }
     }
 
@@ -20,9 +20,25 @@
         }
     }
 
+    .btn-hidden {
+        display: none;
+        margin-top: 30px;
+    }
+
     @media screen and (max-width: $sm) {
         &__wrap {
             flex-wrap: wrap;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &.d-none {
+                display: none;
+            }
         }
 
         &__item {
