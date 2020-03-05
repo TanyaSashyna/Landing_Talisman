@@ -10,6 +10,11 @@ html, body {
 
 main {
     flex-grow: 1;
+    margin-top: 100px;
+
+    @media screen and (max-width: $sm) {
+        margin-top: 50px;
+    }
 }
 
 .container {

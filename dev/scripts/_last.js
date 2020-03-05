@@ -28,14 +28,15 @@ function initSlickSlider() {
       prevArrow: btnPrev,
       infinite: true,
 		slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 4000,
       responsive: [
          {
             breakpoint: 1024,
             settings: {
-               slidesToShow: 1
+               slidesToShow: 1,
+               slidesToScroll: 1,
             }
          }
       ]
@@ -45,17 +46,21 @@ function initSlickSlider() {
 function initAnchor() {
    $(document).ready(function () {
       $(".anchors-menu").on("click", ".link-anchor", function (event) {
-          //cancels standard click-through processing
-          event.preventDefault();
+         //cancels standard click-through processing
+         event.preventDefault();
+         var btnMenu = document.getElementById('btn-menu');
+         var navMenu = document.getElementById('menu');
           
-          //take the side identifier from the href attribute
-          var id = $(this).attr('href'),
+         //take the side identifier from the href attribute
+         var id = $(this).attr('href'),
+         
+         //learn the height from the beginning of the page to the block that the anchor refers to
+         top = $(id).offset().top;
           
-          //learn the height from the beginning of the page to the block that the anchor refers to
-          top = $(id).offset().top;
-          
-          //animate the transition to the distance - top for 1500 ms
-          $('body,html').animate({ scrollTop: top }, 1500);
+         //animate the transition to the distance - top for 1500 ms
+         $('body,html').animate({ scrollTop: top - 100 }, 1500);
+         btnMenu.classList.remove('btn-menu__close');
+         navMenu.classList.remove('nav-menu__show');
       });
   });
 }

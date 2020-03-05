@@ -4,4 +4,14 @@
     .caption-icon {
         background-color: $grey-1;
     }
+
+    @media screen and (max-width: $lg) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: $sm-1) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
