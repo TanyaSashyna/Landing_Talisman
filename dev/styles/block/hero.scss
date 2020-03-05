@@ -214,16 +214,16 @@
     @media screen and (max-width: $lg) {
         &-content {
             padding-right: 0;
-
-            .mouse-wrap {
-                display: none;
-            }
         }
     }
 
     @media screen and (max-width: $md) {
         &-content {
             padding-left: 10px;
+
+            .mouse-wrap {
+                display: none;
+            }
 
             .caption {
                 margin-bottom: 0;

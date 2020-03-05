@@ -17,7 +17,8 @@ const
   runSequence = require('run-sequence'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
-  uglify = require('gulp-uglify');
+  uglify = require('gulp-uglify'),
+  csso = require('gulp-csso');
 
 const path = {
   devStyles: 'dev/styles',
@@ -80,6 +81,7 @@ gulp.task('styles:inject', () => {
 gulp.task('styles:compile', () => {
   return gulp
     .src(`${path.devStyles}/main.scss`)
+    .pipe(csso())
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded' // expanded, compressed

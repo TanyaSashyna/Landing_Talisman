@@ -28,6 +28,10 @@
                     &:focus {
                         box-shadow: 0 0 5px rgba($grey-2, 0.5);
                     }
+
+                    &.input-error {
+                        background-color: rgba($red, 0.15);
+                    }
                 }
             }
 
