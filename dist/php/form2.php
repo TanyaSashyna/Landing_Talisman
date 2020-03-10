@@ -3,17 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <title>Формы обратной связи</title>
-<meta http-equiv="Refresh" content="4; URL="> 
+<meta http-equiv="" content="4; URL=">
+<style type="text/css">
+	html,
+	body {
+		height: 100%;
+	}
+	body {
+		background: #2C2C2C;
+	}
+	div {
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+	span {
+		display: block;
+		padding: 30px;
+		background: #FEC70B;
+		font-size: 16px;
+		text-align: center;
+		color: #2C2C2C;
+		font-weight: bold;
+	}
+	span a {
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		transition: 0.5s;
+		margin-top: 20px;
+		color: #2C2C2C;
+	}
+	span a:hover {
+		border-bottom: 1px solid #2C2C2C;
+	}
+	a.logo {
+		display: block;
+		width: 100px;
+    	height: 100px;
+		margin-bottom: 40px;
+	}
+	a.logo img {
+		width: 100%;
+	}
+</style>
 </head>
 <body>
 
 <?php 
 
-$sendto   = "sashina51@gmail.com"; 
-$username = $_GET['name'];   
-$usertel = $_GET['phone']; 
-$usermail = $_GET['email'];
-$message = $_GET['message'];  
+$sendto   = "talisman-vlad@ukr.net";
+$username = $_POST['name'];   
+$usertel = $_POST['phone']; 
+$usermail = $_POST['email'];
+$message = $_POST['message'];
 
 // Формирование заголовка письма
 $subject  = "Новое сообщение";
@@ -31,11 +76,27 @@ $msg .= "<p><strong>Телефон:</strong> ".$usertel."</p>\r\n";
 $msg .= "<p><strong>Сообщения:</strong> ".$message."</p>\r\n";
 $msg .= "</body></html>";
 
-отправка сообщения
+//отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "<center><img src='pro/spasibo.png'></center>";
+	echo "<div>
+		<a href='/' class='logo'>
+			<img src='../img/logo.png'/>
+		</a>
+		<span>
+			Благодарим. Ваше сообщение отправлено.
+			<br/><a href='/'>Вернуться на сайт</a>
+		</span>
+	</div>";
 } else {
-	echo "<center><img src='images/ne-otpravleno.png'></center>";
+	echo "<div>
+		<a href='/' class='logo'>
+			<img src='../img/logo.png'/>
+		</a>
+		<span>
+			Что-то пошло не так. Не отправлено.
+			<br/><a href='/'>Вернуться на сайт</a>
+		</span>
+	</div>";
 }
 
 ?>

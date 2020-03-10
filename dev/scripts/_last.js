@@ -188,11 +188,6 @@ function validationForm() {
             checkValidation(f, item);
             break;
             
-            case 'message':
-            var l = item.value.search(regArr[0]);
-            checkValidation(l, item);
-            break;
-            
          case 'phone':
             let p = item.value.search(regArr[1]);
             checkValidation(p, item);
@@ -220,8 +215,8 @@ function validationForm() {
    };
 
    function addAttrBtn (event) {
+      var parentForm = event.target.parentElement.parentElement.parentElement;
       var targetBtn = event.target.parentElement.parentElement.parentElement.querySelector('.btn-send');
-      console.log('targetBtn',targetBtn);
 
       if (checkRes === false) {
          targetBtn.setAttribute('disabled' , 'disabled');

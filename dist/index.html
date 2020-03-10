@@ -218,7 +218,7 @@
 
 						<h3 class="we-make__caption">Получите бесплатный расчёт стоимости и сроков</h3>
 
-						<form class="form" action="./php/form1.php">
+						<form class="form form-1" action="./php/form1.php" method="post">
 							<div class="form__group">
 								<div class="form__group--icon">
 									<i class="fas fa-user"></i>
@@ -860,7 +860,12 @@
 
 				<div class="container">
 					<div class="contact-form">
-						<form class="form wow bounceInUp" data-wow-duration="2s" action="./php/form2.php">
+						<form
+							class="form form-2 wow bounceInUp" 
+							data-wow-duration="2s" 
+							action="./php/form2.php" 
+							method="post"
+						>
 							<div class="form__group">
 								<div class="form__group--icon">
 									<i class="fas fa-user"></i>
@@ -901,7 +906,6 @@
 								<label>
 									<span class="sr-only">Ваше сообщение</span>
 									<input type="text" name="message" placeholder="Ваше сообщение" class="field"/>
-									<span class="error">Введите сообщение</span>
 								</label>
 							</div>
 
