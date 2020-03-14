@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Формы обратной связи</title>
 <meta http-equiv="" content="4; URL=">
 <style type="text/css">
@@ -10,7 +11,9 @@
 		height: 100%;
 	}
 	body {
+		min-width: 320px;
 		background: #2C2C2C;
+		margin: 0;
 	}
 	div {
 		display: flex;
@@ -18,6 +21,7 @@
     	align-items: center;
 		flex-direction: column;
 		height: 100%;
+		padding: 10px;
 	}
 	span {
 		display: block;
@@ -54,14 +58,14 @@
 
 <?php 
 
-$sendto   = "talisman-vlad@ukr.net";
+$sendto = "viskevicv@gmail.com";
 $username = $_POST['name'];   
 $usertel = $_POST['phone']; 
 $usermail = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование заголовка письма
-$subject  = "Новое сообщение";
+$subject  = "Новое сообщение с сайта Талисман";
 $headers  = "From: " . strip_tags($usermail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
